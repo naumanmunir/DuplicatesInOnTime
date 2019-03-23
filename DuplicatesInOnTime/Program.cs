@@ -12,7 +12,7 @@ namespace DuplicatesInOnTime
         {
             int[] arr2 = { 1, 2, 3, 1, 3, 6, 6 };
 
-            FindDuplicates(arr2);
+            //FindDuplicates(arr2);
 
             Console.ReadLine();
         }

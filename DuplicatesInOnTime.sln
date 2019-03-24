@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicatesInOnTime", "Dupli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI String Match", "DI String Match\DI String Match.csproj", "{591448E8-68A8-4B23-9306-0CC06F1FC470}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumProduct", "MaximumProduct\MaximumProduct.csproj", "{7CAA96D4-923B-4875-A7C8-641B11F18A37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Best Time to Buy and Sell Stock", "Best Time to Buy and Sell Stock\Best Time to Buy and Sell Stock.csproj", "{D2B416FA-AFA0-4928-8848-48AD7A8E2830}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{591448E8-68A8-4B23-9306-0CC06F1FC470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591448E8-68A8-4B23-9306-0CC06F1FC470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591448E8-68A8-4B23-9306-0CC06F1FC470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CAA96D4-923B-4875-A7C8-641B11F18A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAA96D4-923B-4875-A7C8-641B11F18A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAA96D4-923B-4875-A7C8-641B11F18A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAA96D4-923B-4875-A7C8-641B11F18A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B416FA-AFA0-4928-8848-48AD7A8E2830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B416FA-AFA0-4928-8848-48AD7A8E2830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B416FA-AFA0-4928-8848-48AD7A8E2830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B416FA-AFA0-4928-8848-48AD7A8E2830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

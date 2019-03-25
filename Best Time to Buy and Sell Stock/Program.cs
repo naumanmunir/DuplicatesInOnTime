@@ -20,11 +20,14 @@ namespace Best_Time_to_Buy_and_Sell_Stock
             int profit = 0;
             int size = prices.Length;
 
-            for (int i = 0; i < size - 1; i++)
+            for (int i = 0; i < size; i++)
             {
-                if (prices[i + 1] - prices[i] > profit)
+                for (int j = i+1; j < size - 1; j++)
                 {
-                    profit = prices[i + 1] - prices[i];
+                    if (prices[j] - prices[i] > profit)
+                    {
+                        profit = prices[j] - prices[i];
+                    }
                 }
             }
 

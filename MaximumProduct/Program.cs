@@ -42,6 +42,8 @@ namespace MaximumProduct
 
             Dictionary<string, int> mails = new Dictionary<string, int>();
 
+            mails[]
+
             for (int i = 0; i < emails.Length; i++)
             {
                 var locale = emails[i].Split('@')[0];

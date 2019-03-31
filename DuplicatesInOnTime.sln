@@ -13,6 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Best Time to Buy and Sell S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contains Duplicate", "Contains Duplicate\Contains Duplicate.csproj", "{060FD613-3542-46F9-A699-38AAAE633C55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maxium Subarray", "Maxium Subarray\Maxium Subarray.csproj", "{B6124070-5ED7-4E07-9830-6AF5190471E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum of Two Integers", "Sum of Two Integers\Sum of Two Integers.csproj", "{1A53EE25-7DAF-407F-B427-E81C2D098713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum Lists", "Sum Lists\Sum Lists.csproj", "{8D89B0EC-21B2-4250-B840-7ABA27FD5584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOfPlates", "StackOfPlates\StackOfPlates.csproj", "{1B9686F5-FC48-4910-9F14-43D030B4FF81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +47,22 @@ Global
 		{060FD613-3542-46F9-A699-38AAAE633C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{060FD613-3542-46F9-A699-38AAAE633C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{060FD613-3542-46F9-A699-38AAAE633C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6124070-5ED7-4E07-9830-6AF5190471E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6124070-5ED7-4E07-9830-6AF5190471E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6124070-5ED7-4E07-9830-6AF5190471E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6124070-5ED7-4E07-9830-6AF5190471E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A53EE25-7DAF-407F-B427-E81C2D098713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A53EE25-7DAF-407F-B427-E81C2D098713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A53EE25-7DAF-407F-B427-E81C2D098713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A53EE25-7DAF-407F-B427-E81C2D098713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D89B0EC-21B2-4250-B840-7ABA27FD5584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D89B0EC-21B2-4250-B840-7ABA27FD5584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D89B0EC-21B2-4250-B840-7ABA27FD5584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D89B0EC-21B2-4250-B840-7ABA27FD5584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B9686F5-FC48-4910-9F14-43D030B4FF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B9686F5-FC48-4910-9F14-43D030B4FF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B9686F5-FC48-4910-9F14-43D030B4FF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B9686F5-FC48-4910-9F14-43D030B4FF81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

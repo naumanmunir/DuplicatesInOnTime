@@ -25,6 +25,8 @@ namespace Contains_Duplicate
 
             for (int i = 0; i < nums.Length; i++)
             {
+                
+
                 if (numsCount.ContainsKey(nums[i]))
                 {
                     numsCount[nums[i]] = 2;

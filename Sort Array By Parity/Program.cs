@@ -12,6 +12,13 @@ namespace Sort_Array_By_Parity
         {
             int[] A = new int[] {7, 10, 5, 2, 2, 9};
             SortArrayByParity(A);
+
+
+            List<int> top = new List<int>();
+
+            top.Add(3);
+
+
         }
 
         static int[] SortArrayByParity(int[] A)

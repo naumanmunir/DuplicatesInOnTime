@@ -50,7 +50,14 @@ namespace Intersection_of_Two_Linked_List
                 currB = currB.next;
             }
 
-            var hh = hs.Select(f => f.val).Intersect(hs2.Select(b => b.val));
+            for (int i = 0; i < hs.Count; i++)
+            {
+                if (hs[i].val == )
+                {
+
+                }
+            }
+
 
             //while (currB != null)
             //{

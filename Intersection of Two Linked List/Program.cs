@@ -52,10 +52,7 @@ namespace Intersection_of_Two_Linked_List
 
             for (int i = 0; i < hs.Count; i++)
             {
-                if (hs[i].val == )
-                {
 
-                }
             }
 
 

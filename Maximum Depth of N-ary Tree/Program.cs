@@ -38,10 +38,14 @@ namespace Maximum_Depth_of_N_ary_Tree
             {
                 var curr = stack.Pop();
 
-                if (!visited.Add(curr))
+                if (visited.Add(curr))
                 {
-                    foreach (var neighbour in root.children)
-                        stack.Push(neighbour);
+                    if (curr.children != null)
+                    {
+                        foreach (var neighbour in curr.children)
+                            stack.Push(neighbour);
+                    }
+
                 }
 
                 depth++;

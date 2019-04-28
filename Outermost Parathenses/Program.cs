@@ -10,19 +10,44 @@ namespace Outermost_Parathenses
     {
         static void Main(string[] args)
         {
+            var result = RemoveOuterParentheses("(()())(())");
+
+            Console.ReadLine();
         }
 
-        public string RemoveOuterParentheses(string S)
+        static string RemoveOuterParentheses(string S)
         {
-            var g = S.IndexOfAny()
-
             StringBuilder sb = new StringBuilder();
+            int opIndex = 0;
+            int cpIndex = 0;
+            int sum = 0;
+
             for (int i = 0; i < S.Length; i++)
             {
-                
+                if (S[i] == '(')
+                {
+                    sum++;
+                    if (sum == 1)
+                    {
+                        opIndex = i;
+                    }
+                }
+                else if(S[i] == ')')
+                {
+                    sum--;
+                    if (sum == 0)
+                    {
+                        cpIndex = i;
+
+                        int start = opIndex + 1;
+                        int length = cpIndex - start;
+
+                        sb.Append(S.Substring(start, length));
+                    }
+                }
             }
 
-            return "";
+            return sb.ToString();
         }
     }
 }

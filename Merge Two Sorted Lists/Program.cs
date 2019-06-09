@@ -11,25 +11,13 @@ namespace Merge_Two_Sorted_Lists
     {
         static void Main(string[] args)
         {
-            string num1 = "25";
-            string num2 = "10";
 
-            int num1Rep = 0;
+            ListNode listNode = new ListNode(5);
 
-            for (int i = 0; i < num1.Length; i++)
-            {
-                num1Rep +
-            }
-            
-
-
-            ListNode listNode = new ListNode(1);
-            listNode.next = new ListNode(2);
-            listNode.next.next = new ListNode(4);
-
-            ListNode listNode2 = new ListNode(3);
-            listNode2.next = new ListNode(5);
-
+            ListNode listNode2 = new ListNode(1);
+            listNode2.next = new ListNode(2);
+            listNode2.next.next = new ListNode(4);
+            listNode2.next.next.next = new ListNode(5);
 
             var res = MergeTwoLists(listNode, listNode2);
 
@@ -38,33 +26,72 @@ namespace Merge_Two_Sorted_Lists
 
         static ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
+            if (l1 == null && l2 == null) return null;
+            if (l1 == null) return l2;
+            if (l2 == null) return l1;
+            if ((l1.next == null && l2.next == null) && (l2.val <= l1.val)) { l2.next = l1; return l2; }
 
-            var lcurr = l1;
-            var l2curr = l2;
-            ListNode result = new ListNode(l1.val);
-
-            var res = result;
-
-            while (lcurr.next != null || l2curr.next != null)
+            var curr = l1;
+            var curr2 = l2;
+            ListNode prev = curr;
+            while (curr.next != null && curr2.next != null)
             {
-                if (lcurr.val <= l2curr.val && l2curr.val <= lcurr.next.val)
+                if (curr2.val <= curr.val)
                 {
-                    ListNode node = new ListNode(l2curr.val);
-                    res.next = node;
-                    res = res.next;
-                    l2curr = l2curr.next;
+                    ListNode n = new ListNode(curr2.val);
+                    var tmp = curr.next;
+                    curr.next = n;
+                    n.next = tmp;
+
+                    prev = curr;
+                    curr2 = curr2.next;
+                    curr = curr.next;
+
                 }
-                else if(lcurr.val <= l2curr.val && l2curr.val <= lcurr.next.val)
+                else
                 {
-                    ListNode node = new ListNode(lcurr.val);
-                    res.next = node;
-                    res = res.next;
-                    lcurr = lcurr.next;
+                    prev = curr;
+                    curr = curr.next;
+
                 }
 
             }
 
-            return result;
+
+            while (curr2 != null)
+            {
+                if (curr2.val <= curr.val)
+                {
+                    var tmp = curr;
+                    curr = new ListNode(curr2.val);
+                    curr.next = tmp;
+
+                    curr2 = curr2.next;
+                }
+                else
+                {
+                    curr.next = curr2;
+                    curr = curr.next;
+                    curr2 = curr2.next;
+                }
+                
+            }
+
+
+            if (curr2.val <= prev.val)
+            {
+                var tmp = prev.next;
+                prev.next = curr2;
+
+                while (prev.next != null)
+                {
+                    prev = prev.next;
+                }
+
+                prev.next = tmp;
+            }
+
+            return l1;
         }
     }
 }
